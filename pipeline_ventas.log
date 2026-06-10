@@ -1,0 +1,130 @@
+==================================================
+FECHA/HORA      : 2026-06-09 21:55:21
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (BD)  : 997 registros limpios
+STATUS_ERR (BD) : 3 alertas de error
+TOTAL EN BD     : 1000 registros
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Todas las filas fueron contabilizadas.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-09 22:56:22
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (BD)  : 1994 registros limpios
+STATUS_ERR (BD) : 6 alertas de error
+TOTAL EN BD     : 2000 registros
+AUDITORÍA       : ALERTA: Descuadre de datos. Filas leídas (1000) no coinciden con BD (2000).
+RESULTADO       : 🚨 ERROR_DESCUADRE
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-09 23:21:02
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 3000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-09 23:40:43
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 4000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 08:34:20
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 5000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 09:09:33
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 6000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 09:34:15
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 7000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 09:38:09
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 8000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 09:47:16
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 9000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 09:56:13
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 10000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 15:15:32
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 11000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
+==================================================
+FECHA/HORA      : 2026-06-10 15:28:37
+ARCHIVO         : ventas_del_dia.csv
+LEÍDOS (CSV)    : 1000 filas
+STATUS_OK (DÍA) : 997 registros inyectados
+STATUS_ERR (DÍA): 3 alertas registradas
+CRECIMIENTO NETO: 1000 registros nuevos
+TOTAL ACUMULADO : 12000 registros totales en BD
+AUDITORÍA       : CONCILIACIÓN EXITOSA: Crecimiento incremental coincide al 100% con el archivo diario.
+RESULTADO       : ✅ PROCESO_INTEGRO
+==================================================
