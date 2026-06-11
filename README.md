@@ -51,6 +51,7 @@ DB_PASS=tu_contraseña_usuario_aqui
 Antes de lanzar el pipeline por primera vez, debes darle permisos de ejecución a los asistentes de Bash desde tu terminal de Ubuntu:
 ```bash
 chmod +x init_db.sh procesar_ventas.sh
+```
 
 ---
 
