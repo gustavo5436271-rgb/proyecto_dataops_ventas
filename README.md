@@ -25,6 +25,35 @@ El pipeline está segmentado en scripts modulares de Linux (`.sh`) y archivos es
 
 ---
 
+## ⚙️ Configuración y Requisitos para la Ejecución Local
+
+Para garantizar la seguridad, las contraseñas y accesos **están protegidos mediante variables de entorno** a través de un archivo local y nunca se suben al repositorio (están excluidas en el `.gitignore`).
+
+Sigue estos pasos para replicar el pipeline en tu máquina WSL2:
+
+### 1. Crear el archivo de configuración ambiental (`.env`)
+Dado que la carpeta del proyecto se encuentra físicamente hospedada en el sistema de archivos de Windows pero se accede y ejecuta mediante un puente remoto en WSL2, debes ubicarte en dicha ruta y crear un archivo de texto llamado exactamente `.env`. Reemplaza los valores con tu usuario y contraseñas reales de Oracle:
+
+```env
+# ==============================================================================
+# CONFIGURACIÓN DE CREDENCIALES - PIPELINE DATAOPS (WSL2 / ORACLE)
+# ==============================================================================
+
+# 1. Credenciales del Administrador Supremo (Se usa solo para crear la infraestructura)
+DB_SYSTEM_PASS=tu_contraseña_system_aqui
+
+# 2. Credenciales del Proyecto DataOps (Se usa para el procesamiento diario)
+DB_USER=user_dataops
+DB_PASS=tu_contraseña_usuario_aqui
+```
+
+### 2. Otorgar permisos de ejecución en Linux
+Antes de lanzar el pipeline por primera vez, debes darle permisos de ejecución a los asistentes de Bash desde tu terminal de Ubuntu:
+```bash
+chmod +x init_db.sh procesar_ventas.sh
+
+---
+
 ## 📸 Ejecución y Demostración en la Terminal de Ubuntu (WSL2)
 
 ### 1. Inicialización de la Infraestructura en Linux
@@ -58,25 +87,3 @@ $$\text{Filas Finales en BD} - \text{Filas Iniciales en BD} - \text{Filas Totale
 
 Si el resultado es exactamente $0$, el sistema valida la operation como exitosa. Cualquier desviación activa una alerta inmediata en los logs de auditoría.
 
----
-
-## ⚙️ Configuración y Requisitos para la Ejecución Local
-
-Para garantizar la seguridad, las contraseñas y accesos **están protegidos mediante variables de entorno** a través de un archivo local y nunca se suben al repositorio (están excluidas en el `.gitignore`).
-
-Sigue estos pasos para replicar el pipeline en tu máquina WSL2:
-
-### 1. Crear el archivo de configuración ambiental (`.env`)
-Dado que la carpeta del proyecto se encuentra físicamente hospedada en el sistema de archivos de Windows pero se accede y ejecuta mediante un puente remoto en WSL2, debes ubicarte en dicha ruta y crear un archivo de texto llamado exactamente `.env`. Reemplaza los valores con tu usuario y contraseñas reales de Oracle:
-
-```env
-# ==============================================================================
-# CONFIGURACIÓN DE CREDENCIALES - PIPELINE DATAOPS (WSL2 / ORACLE)
-# ==============================================================================
-
-# 1. Credenciales del Administrador Supremo (Se usa solo para crear la infraestructura)
-DB_SYSTEM_PASS=tu_contraseña_system_aqui
-
-# 2. Credenciales del Proyecto DataOps (Se usa para el procesamiento diario)
-DB_USER=user_dataops
-DB_PASS=tu_contraseña_usuario_aqui
