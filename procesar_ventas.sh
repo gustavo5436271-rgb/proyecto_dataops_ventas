@@ -196,6 +196,8 @@ echo "----------------------------------------------------"
 # ---------------------------------------------------------------------
 DIAS_A_REPORTAR=${1:-0}
 
+REPORTE_EXCEL="reporte_operaciones_diarias.csv"
+
 # 1. Mensaje adaptativo de inicio y preparación de la variable de texto final
 if [ "$DIAS_A_REPORTAR" -eq 0 ]; then
     echo ""
@@ -209,7 +211,6 @@ else
     TEXTO_FINAL="📈 ¡Reporte operativo de los últimos $DIAS_A_REPORTAR días generado con éxito en: $REPORTE_EXCEL!"
 fi
 
-REPORTE_EXCEL="reporte_operaciones_diarias.csv"
 
 sqlplus.exe -S "${DB_USER}/${DB_PASS}"@//localhost:1521/XE <<EOF
 SET HEADING OFF FEEDBACK OFF PAGESIZE 0 LINESIZE 300 TRIMSPOOL ON;
